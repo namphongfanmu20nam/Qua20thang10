@@ -243,7 +243,7 @@ body.hint .tap{opacity:.8}
    - from: tên người gửi         (để trống sẽ ký tên "Mascot")
    - msg:  lời nhắn ở tấm thiệp cuối (để trống dùng lời nhắn mặc định)
 ================================================================ */
-const CONFIG = { to: "", from: "", msg: "", cls: "10A5", music: "", teacher: "cô giáo" };
+const CONFIG = { to: "", from: "", msg: "", cls: "10A5", music: "", teacher: "cô Mến" };
 // music: để trống = dùng bài nhạc đã nhúng sẵn trong file. Muốn đổi bài: điền tên file nhạc đặt cạnh file HTML (vd "nhac.mp3") hoặc link http(s).
 
 (() => {
@@ -255,7 +255,7 @@ const CONFIG = { to: "", from: "", msg: "", cls: "10A5", music: "", teacher: "c�
   const MUSIC = (qs.get('music') ?? CONFIG.music).trim();
   const you = TO || 'các cậu';
   const GIRLS = `các bạn nữ ${CLS}`;
-  const TEACHER = (qs.get('teacher') ?? CONFIG.teacher).trim() || 'cô giáo';
+  const TEACHER = (qs.get('teacher') ?? CONFIG.teacher).trim() || 'cô Mến';
   const WE = `tập thể nam lớp ${CLS}`;
   document.title = `Quà 20/10 từ ${WE}`;
   document.getElementById('hello').innerHTML = `có một điều nhỏ xíu<br>${WE} muốn gửi<br>tới ${GIRLS} và ${TEACHER} nhân ngày 20/10`;
